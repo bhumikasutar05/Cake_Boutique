@@ -1,0 +1,293 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+
+ /* navbar */
+.navbar{
+   color: #4f0329;
+}
+
+.navbar img{
+   width: 200px;
+
+}
+
+#element{
+color: #fff;
+font-weight: 400;
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+ body{
+    font-family: "Spline sans",sans-serif;
+    color: rgb(15, 14, 15);
+    line-height: 1.7;
+ }
+
+ h1,h2,h3,h4,h5,h6{
+    font-weight:600 ;
+    color: #222222;
+ }
+
+ a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+ }
+
+ a.hover{
+    color: #6d4619;
+ }
+
+ img{
+   width: 100%;
+ }
+
+ section{
+   padding-top: 120px;
+   padding-bottom: 120px;
+   
+ }
+
+ .shadow-on-hover{
+   transition: all 0.4s;
+ }
+
+ .shadow-on-hover:hover{
+   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+ }
+
+ .btn{
+    border-radius: 0;
+    padding: 14px 38px;
+ }
+
+ .btn-brand{
+    color: #fff;
+    font-weight: 500;
+    border-color:#660033;
+    background-color:  #CC6699;
+ }
+
+ .btn-brand:hover{
+    border-color:#4f0329;
+    background-color:  #6e1b45;
+    color: white;
+ }
+
+ .bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+ /* slider */
+
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/choco1.webp);
+}
+
+.slide-2 {
+   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/redvelvet.jpg);
+}
+
+.slide-3 {
+   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/Blueberry.jpg);
+}
+
+
+#heroSlider h6::after,
+#heroSlider h6::before{
+content: " ";
+width: 40px;
+height: 4px;
+background-color: #fff;
+display: inline-block;
+margin: 10px;
+vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+background-color: rgba(0,0,0,0.6);
+width: 40px;
+height: 70px;
+margin: auto;
+}
+
+/* About */
+#about.divider{
+   width: 60px;
+   height: 2px;
+   display: block;
+   background-color: #F58d17;
+}
+
+.intro-text{
+   margin-bottom: 40px;
+   text-align: center;
+}
+
+.intro-text{
+   max-width: 500px;
+   margin: auto;
+}
+
+/* menu */
+#menu .nav-pills .nav-link{
+   background-color: #fff;
+   margin-left: 8px;
+   margin-right: 8px;
+   color: #222;
+   border-radius: 100px;
+   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+#menu .nav-pills .nav-link.active{
+background-color: #CC6699;
+color: #fff;
+}
+
+.menu-item .stars {
+      color: #6f083c;
+}
+
+/* features */
+#features{
+   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/item1.jpg);
+}
+
+.feature {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature .feature-icon {
+   width: 80px;
+   height: 80px;
+   background-color: #CC6699;
+   color: #ffffff;
+   font-size: 28px;
+   display:inline-grid;
+   align-content: center;
+   text-align: center;
+}
+
+/* Team */
+
+.team-member img {
+   max-width: 140px;
+   box-shadow: -10px -10px 0 #CC6699;
+   border-radius: 100px;
+}
+
+/* Review */
+
+#Review{
+   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/cafe3.jpg);
+}
+
+.review img{
+   width: 75px;
+   height: 75px;
+   object-fit: cover;
+}
+
+.review .qoute-icon{
+   font-size: 74px;
+   color: #CC6699;
+   line-height: 1;
+}
+
+.review .stars{
+   color: #6f083c;
+}
+
+#Review .carousel-indicators {
+   margin-bottom: -3rem;
+}
+
+/* insta-post */
+
+.insta-posts{
+   position: relative;
+   overflow: hidden;
+}
+
+.insta-posts .insta-btn{
+   width: 90px;
+   height: 90px;
+   background-color: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-size: 26px;
+   transform: translate(-50%,-50%);
+   opacity: 0;
+}
+
+
+.insta-posts img{
+   transition: all 0.4s;
+}
+
+.insta-posts:hover img{
+   transform: scale(1.2);
+}
+
+.insta-posts:hover .insta-btn{
+   opacity: 1;
+}
+
+/* Blogs */
+
+.blog-post img{
+   width: 40%;
+   object-fit: cover;
+
+}
+
+@media (max-width:768px){
+   .blog-post{
+      flex-direction: column;
+   }
+   .blog-post img{
+      width: 100%;
+   }
+}
+
+/* footer */
+
+footer {
+   background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/cakeshop.jpg);
+   padding-top: 120px;
+   padding-bottom: 30px;
+}
+
+.footer-top{
+   margin-bottom: 30px;
+}
+
+footer img{
+   width: 200px;
+}
+
+footer p,
+footer a{
+   color: rgba(255, 255, 255, 0.75);
+}
+
+footer .social-links a{
+   font-weight: normal;
+   font-size: 24px;
+   margin-right: 10px;
+}
+
+.footer-bottom{
+   padding-top: 30px;
+   border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
